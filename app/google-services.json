@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "952683789367",
+    "firebase_url": "https://shofiqanytimehospital.firebaseio.com",
+    "project_id": "shofiqanytimehospital",
+    "storage_bucket": "shofiqanytimehospital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952683789367:android:82156b75181b770c",
+        "android_client_info": {
+          "package_name": "com.binimoi.shofiqanytimehospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952683789367-peup587u5798560p5etjqp4jfbq1qbt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtmiyCDrZbXMkbuIwjUyezBlJwNdTaqMM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

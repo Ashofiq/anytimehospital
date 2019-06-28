@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="#fff"
+            android:textSize="40dp"
+            android:paddingTop="150dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="250dp">
+
+        <Button
+            android:id="@+id/docbtn"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="300dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="25dp"
+            android:textSize="20dp"
+            android:text="I am Doctor"
+            android:onClick="docbtn"/>
+
+        <Button
+            android:id="@+id/patientbtn"
+            android:layout_margin="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rounded_button2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="I am Patient"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:onClick="patientbtn"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@id/doctor"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Doctor"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="We Provide professional Doctor in your Home anytime anywhere "
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/nurse"
+            android:layout_below="@+id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nurse"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="We Provide professional Doctor in your Home anytime anywhere "
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/am"
+            android:layout_below="@+id/nurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PhysioTherapist"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="We Provide professional Doctor in your Home anytime anywhere "
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.binimoi.shofiqanytimehospital">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@drawable/hospitalicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".DoctorLoginRegActivity" />
+        <activity android:name=".PatientLoginRegActivity" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB5mXQGYKixcvADmuynGhaYC7bWPvL9gQk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".TherapyActivity" />
+        <activity android:name=".NurseActivity" android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".PatientProfileActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".DoctorDashboardActivity" />
+    </application>
+
+</manifest>
